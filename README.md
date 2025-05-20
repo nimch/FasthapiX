@@ -1,5 +1,4 @@
-# FasthapiX
-just a puvdantic fast pyweb appX
+[![FasthapiX](https://raw.githubusercontent.com/nimch/FasthapiX/refs/heads/main/docs/graphics/fasthapix.svg)](https://github.com/nimch/FasthapiX)
 
 ## Table of contents
 
