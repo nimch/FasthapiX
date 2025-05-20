@@ -11,16 +11,19 @@
 
 ## Stack
 
-[![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/)
-<a href="https://www.htmx.org/" style="color: black;font-size:26px;text-decoration:none"><<span style="color:#3366CC">/</span>>htm<span style="color:#3366CC">x</span></a>
-<a href=https://ai.pydantic.dev/><img src=https://ai.pydantic.dev/img/pydantic-ai-light.svg#only-light width=120></a>
-[![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
+[<img src="https://raw.githubusercontent.com/nimch/FasthapiX/refs/heads/main/docs/graphics/stack/python.svg" height="48">](https://www.python.org/)
 
-[![Jinja](https://img.shields.io/badge/jinja-white.svg?style=for-the-badge&logo=jinja&logoColor=black)](https://jinja.palletsprojects.com/)
-[![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Alpine.js](https://img.shields.io/badge/alpinejs-white.svg?style=for-the-badge&logo=alpinedotjs&logoColor=%238BC0D)](https://alpinejs.dev/)
+[<img src="https://raw.githubusercontent.com/nimch/FasthapiX/refs/heads/main/docs/graphics/stack/htmx.svg" height="30">](https://www.htmx.org/)&nbsp;&nbsp;&nbsp;&nbsp;
+[<img src="https://raw.githubusercontent.com/nimch/FasthapiX/refs/heads/main/docs/graphics/stack/pydantic.svg" height="32">](https://ai.pydantic.dev/)&nbsp;&nbsp;&nbsp;&nbsp;
+[<img src="https://raw.githubusercontent.com/nimch/FasthapiX/refs/heads/main/docs/graphics/stack/fastapi.svg" height="24">](https://fastapi.tiangolo.com/)
 
-[![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+[<img src="https://raw.githubusercontent.com/nimch/FasthapiX/refs/heads/main/docs/graphics/stack/jinja.svg" height="58">](https://jinja.palletsprojects.com/)&nbsp;&nbsp;&nbsp;&nbsp;
+[<img src="https://raw.githubusercontent.com/nimch/FasthapiX/refs/heads/main/docs/graphics/stack/tailwind.svg" height="28">](https://tailwindcss.com/)&nbsp;&nbsp;&nbsp;&nbsp;
+[<img src="https://raw.githubusercontent.com/nimch/FasthapiX/refs/heads/main/docs/graphics/stack/alpinejs.svg" height="36">](https://alpinejs.dev/)&nbsp;&nbsp;&nbsp;&nbsp;
+
+[<img src="https://raw.githubusercontent.com/nimch/FasthapiX/refs/heads/main/docs/graphics/stack/just.svg" height="36">](https://just.systems/)&nbsp;&nbsp;&nbsp;&nbsp;
+[<img src="https://raw.githubusercontent.com/nimch/FasthapiX/refs/heads/main/docs/graphics/stack/uv.svg" height="40">](https://docs.astral.sh/uv/)&nbsp;&nbsp;&nbsp;&nbsp;
+[<img src="https://raw.githubusercontent.com/nimch/FasthapiX/refs/heads/main/docs/graphics/stack/docker.svg" height="46">](https://www.docker.com/)
 
 Python project [pyproject](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/).
 
