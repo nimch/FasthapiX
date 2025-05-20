@@ -1,0 +1,95 @@
+[project]
+authors = [
+    { email = "olivier.niechajowiez@free.fr", name = "Olivier Niechajowiez" },
+]
+dependencies = [
+    "fastapi>=0.115.12",
+    "jinja2>=3.1.6",
+    "omegaconf>=2.3.0",
+    "pandas>=2.2.3",
+    "pandera>=0.24.0",
+    "python-multipart>=0.0.20",
+    "setuptools>=80.7.1",
+]
+description = "just a puvdantic fast pyweb appX"
+name = "pyFastX"
+readme = "README.md"
+requires-python = ">=3.12"
+version = "2025.0.0"
+license = { file = "LICENSE" }
+keywords = ["python", "fastapi", "htmx", "just", "uv", "pydantic", "api"]
+
+[dependency-groups]
+check = [
+    "bandit>=1.8.3",
+    "mypy>=1.15.0",
+    "pandera[mypy]>=0.24.0",
+    "pytest>=8.3.5",
+    "pytest-cov>=6.1.1",
+    "pytest-mock>=3.14.0",
+    "pytest-xdist>=3.6.1",
+    "ruff>=0.9.9",
+]
+commit = ["commitizen>=4.4.1", "pre-commit>=4.1.0"]
+dev = ["fastapi-cli>=0.0.7"]
+doc = ["pdoc>=15.0.1"]
+notebook = ["ipykernel>=6.29.5", "nbformat>=5.10.4"]
+
+[project.urls]
+Documentation = "https://github.com/nimch/pyFastX/blob/main/README.md"
+Homepage = "https://github.com/nimch/pyFastX"
+Repository = "https://github.com/nimch/pyFastX"
+"Bug Tracker" = "https://github.com/nimch/pyFastX/issues"
+Changelog = "https://github.com/nimch/pyFastX"
+
+[tool.uv]
+default-groups = ["check", "commit", "dev", "doc", "notebook"]
+
+[tool.bandit]
+targets = ["src"]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "v$version"
+version_scheme = "pep440"
+version_provider = "pep621"
+changelog_start_rev = "v1.0.0"
+update_changelog_on_bump = true
+
+[tool.coverage.run]
+branch = true
+source = ["src"]
+omit = ["__main__.py"]
+
+[tool.mypy]
+pretty = true
+python_version = "3.13"
+check_untyped_defs = true
+ignore_missing_imports = true
+plugins = ["pandera.mypy", "pydantic.mypy"]
+
+[tool.pytest.ini_options]
+addopts = "--verbosity=2"
+pythonpath = ["src"]
+
+[tool.ruff]
+fix = true
+indent-width = 4
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*.py" = ["D100", "D103"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pyfastx"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
