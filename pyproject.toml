@@ -12,7 +12,7 @@ dependencies = [
     "setuptools>=80.7.1",
 ]
 description = "just a puvdantic fast pyweb appX"
-name = "pyFastX"
+name = "FasthapiX"
 readme = "README.md"
 requires-python = ">=3.12"
 version = "2025.0.0"
@@ -36,11 +36,11 @@ doc = ["pdoc>=15.0.1"]
 notebook = ["ipykernel>=6.29.5", "nbformat>=5.10.4"]
 
 [project.urls]
-Documentation = "https://github.com/nimch/pyFastX/blob/main/README.md"
-Homepage = "https://github.com/nimch/pyFastX"
-Repository = "https://github.com/nimch/pyFastX"
-"Bug Tracker" = "https://github.com/nimch/pyFastX/issues"
-Changelog = "https://github.com/nimch/pyFastX"
+Documentation = "https://github.com/nimch/FasthapiX/blob/main/README.md"
+Homepage = "https://github.com/nimch/FasthapiX"
+Repository = "https://github.com/nimch/FasthapiX"
+"Bug Tracker" = "https://github.com/nimch/FasthapiX/issues"
+Changelog = "https://github.com/nimch/FasthapiX"
 
 [tool.uv]
 default-groups = ["check", "commit", "dev", "doc", "notebook"]
@@ -88,7 +88,7 @@ convention = "google"
 "tests/*.py" = ["D100", "D103"]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/pyfastx"]
+packages = ["src/FasthapiX"]
 
 [build-system]
 requires = ["hatchling"]

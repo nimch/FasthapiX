@@ -343,6 +343,79 @@ wheels = [
 ]
 
 [[package]]
+name = "fasthapix"
+version = "2025.0.0"
+source = { editable = "." }
+dependencies = [
+    { name = "fastapi" },
+    { name = "jinja2" },
+    { name = "omegaconf" },
+    { name = "pandas" },
+    { name = "pandera" },
+    { name = "python-multipart" },
+    { name = "setuptools" },
+]
+
+[package.dev-dependencies]
+check = [
+    { name = "bandit" },
+    { name = "mypy" },
+    { name = "pandera", extra = ["mypy"] },
+    { name = "pytest" },
+    { name = "pytest-cov" },
+    { name = "pytest-mock" },
+    { name = "pytest-xdist" },
+    { name = "ruff" },
+]
+commit = [
+    { name = "commitizen" },
+    { name = "pre-commit" },
+]
+dev = [
+    { name = "fastapi-cli" },
+]
+doc = [
+    { name = "pdoc" },
+]
+notebook = [
+    { name = "ipykernel" },
+    { name = "nbformat" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "fastapi", specifier = ">=0.115.12" },
+    { name = "jinja2", specifier = ">=3.1.6" },
+    { name = "omegaconf", specifier = ">=2.3.0" },
+    { name = "pandas", specifier = ">=2.2.3" },
+    { name = "pandera", specifier = ">=0.24.0" },
+    { name = "python-multipart", specifier = ">=0.0.20" },
+    { name = "setuptools", specifier = ">=80.7.1" },
+]
+
+[package.metadata.requires-dev]
+check = [
+    { name = "bandit", specifier = ">=1.8.3" },
+    { name = "mypy", specifier = ">=1.15.0" },
+    { name = "pandera", extras = ["mypy"], specifier = ">=0.24.0" },
+    { name = "pytest", specifier = ">=8.3.5" },
+    { name = "pytest-cov", specifier = ">=6.1.1" },
+    { name = "pytest-mock", specifier = ">=3.14.0" },
+    { name = "pytest-xdist", specifier = ">=3.6.1" },
+    { name = "ruff", specifier = ">=0.9.9" },
+]
+commit = [
+    { name = "commitizen", specifier = ">=4.4.1" },
+    { name = "pre-commit", specifier = ">=4.1.0" },
+]
+dev = [{ name = "fastapi-cli", specifier = ">=0.0.7" }]
+doc = [{ name = "pdoc", specifier = ">=15.0.1" }]
+notebook = [
+    { name = "ipykernel", specifier = ">=6.29.5" },
+    { name = "nbformat", specifier = ">=5.10.4" },
+]
+
+[[package]]
 name = "fastjsonschema"
 version = "2.21.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1012,79 +1085,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/a4/7d/e09391c2eebeab681df2b74bfe6c43422fffede8dc74187b2b0bf6fd7571/pydantic_core-2.33.2-cp313-cp313t-macosx_11_0_arm64.whl", hash = "sha256:61c18fba8e5e9db3ab908620af374db0ac1baa69f0f32df4f61ae23f15e586ac", size = 1806162, upload-time = "2025-04-23T18:32:20.188Z" },
     { url = "https://files.pythonhosted.org/packages/f1/3d/847b6b1fed9f8ed3bb95a9ad04fbd0b212e832d4f0f50ff4d9ee5a9f15cf/pydantic_core-2.33.2-cp313-cp313t-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:95237e53bb015f67b63c91af7518a62a8660376a6a0db19b89acc77a4d6199f5", size = 1981560, upload-time = "2025-04-23T18:32:22.354Z" },
     { url = "https://files.pythonhosted.org/packages/6f/9a/e73262f6c6656262b5fdd723ad90f518f579b7bc8622e43a942eec53c938/pydantic_core-2.33.2-cp313-cp313t-win_amd64.whl", hash = "sha256:c2fc0a768ef76c15ab9238afa6da7f69895bb5d1ee83aeea2e3509af4472d0b9", size = 1935777, upload-time = "2025-04-23T18:32:25.088Z" },
-]
-
-[[package]]
-name = "pyfastx"
-version = "2025.0.0"
-source = { editable = "." }
-dependencies = [
-    { name = "fastapi" },
-    { name = "jinja2" },
-    { name = "omegaconf" },
-    { name = "pandas" },
-    { name = "pandera" },
-    { name = "python-multipart" },
-    { name = "setuptools" },
-]
-
-[package.dev-dependencies]
-check = [
-    { name = "bandit" },
-    { name = "mypy" },
-    { name = "pandera", extra = ["mypy"] },
-    { name = "pytest" },
-    { name = "pytest-cov" },
-    { name = "pytest-mock" },
-    { name = "pytest-xdist" },
-    { name = "ruff" },
-]
-commit = [
-    { name = "commitizen" },
-    { name = "pre-commit" },
-]
-dev = [
-    { name = "fastapi-cli" },
-]
-doc = [
-    { name = "pdoc" },
-]
-notebook = [
-    { name = "ipykernel" },
-    { name = "nbformat" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "fastapi", specifier = ">=0.115.12" },
-    { name = "jinja2", specifier = ">=3.1.6" },
-    { name = "omegaconf", specifier = ">=2.3.0" },
-    { name = "pandas", specifier = ">=2.2.3" },
-    { name = "pandera", specifier = ">=0.24.0" },
-    { name = "python-multipart", specifier = ">=0.0.20" },
-    { name = "setuptools", specifier = ">=80.7.1" },
-]
-
-[package.metadata.requires-dev]
-check = [
-    { name = "bandit", specifier = ">=1.8.3" },
-    { name = "mypy", specifier = ">=1.15.0" },
-    { name = "pandera", extras = ["mypy"], specifier = ">=0.24.0" },
-    { name = "pytest", specifier = ">=8.3.5" },
-    { name = "pytest-cov", specifier = ">=6.1.1" },
-    { name = "pytest-mock", specifier = ">=3.14.0" },
-    { name = "pytest-xdist", specifier = ">=3.6.1" },
-    { name = "ruff", specifier = ">=0.9.9" },
-]
-commit = [
-    { name = "commitizen", specifier = ">=4.4.1" },
-    { name = "pre-commit", specifier = ">=4.1.0" },
-]
-dev = [{ name = "fastapi-cli", specifier = ">=0.0.7" }]
-doc = [{ name = "pdoc", specifier = ">=15.0.1" }]
-notebook = [
-    { name = "ipykernel", specifier = ">=6.29.5" },
-    { name = "nbformat", specifier = ">=5.10.4" },
 ]
 
 [[package]]
