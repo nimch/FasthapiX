@@ -11,13 +11,22 @@ dependencies = [
     "python-multipart>=0.0.20",
     "setuptools>=80.7.1",
 ]
-description = "just a puvdantic fast pyweb appX"
+description = "just anuver fast pyweb appx"
 name = "FasthapiX"
 readme = "README.md"
 requires-python = ">=3.12"
 version = "2025.0.0"
 license = { file = "LICENSE" }
-keywords = ["python", "fastapi", "htmx", "just", "uv", "pydantic", "api"]
+keywords = [
+    "python",
+    "fastapi",
+    "htmx",
+    "just",
+    "uv",
+    "pydantic",
+    "api",
+    "boilerplate",
+]
 
 [dependency-groups]
 check = [

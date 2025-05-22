@@ -26,6 +26,8 @@
             "ms-python.vscode-pylance",
             "redhat.vscode-yaml",
             "nefrob.vscode-just-syntax",
+            "bradlc.vscode-tailwindcss",
+            "devdojo.alpinejs-syntax-highlight",
         ]
     }
 }
