@@ -1,9 +1,6 @@
-[<img src="https://raw.githubusercontent.com/nimch/FasthapiX/refs/heads/main/docs/graphics/monogram.svg" height="56">](https://www.python.org/)
-[<img src="https://raw.githubusercontent.com/nimch/FasthapiX/refs/heads/main/docs/graphics/fasthapix.svg" height="56">](https://www.python.org/)
-[<img src="https://raw.githubusercontent.com/nimch/FasthapiX/refs/heads/main/docs/graphics/fasthapix.png" height="56">](https://www.python.org/)
-[![FasthapiX](https://raw.githubusercontent.com/nimch/FasthapiX/refs/heads/main/docs/graphics/monogram.svg)](https://github.com/nimch/FasthapiX)
-[![FasthapiX](https://raw.githubusercontent.com/nimch/FasthapiX/refs/heads/main/docs/graphics/fasthapix.svg)](https://github.com/nimch/FasthapiX)
-[![FasthapiX](https://raw.githubusercontent.com/nimch/FasthapiX/refs/heads/main/docs/graphics/fasthapix.png)](https://github.com/nimch/FasthapiX)
+[<img src="https://raw.githubusercontent.com/nimch/FasthapiX/refs/heads/main/docs/graphics/fasthapix.png" height="60" style="border-radius:12px">](https://www.python.org/)
+
+# FasthapiX
 
 ## Table of contents
 
