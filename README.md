@@ -1,4 +1,4 @@
-[![FasthapiX](https://raw.githubusercontent.com/nimch/FasthapiX/refs/heads/main/docs/graphics/fasthapix.svg)](https://github.com/nimch/FasthapiX)
+[![FasthapiX](https://raw.githubusercontent.com/nimch/FasthapiX/refs/heads/main/docs/graphics/fasthapix.png)](https://github.com/nimch/FasthapiX)
 
 ## Table of contents
 
@@ -26,6 +26,7 @@
 [<img src="https://raw.githubusercontent.com/nimch/FasthapiX/refs/heads/main/docs/graphics/stack/docker.svg" height="46">](https://www.docker.com/)
 
 Python project [pyproject](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/).
+Temporary use of tailwindcss and alpine.js from cdn.
 
 ## Prerequisites
 
