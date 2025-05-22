@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FasthapiX</title>
+    <script src="https://unpkg.com/htmx.org@2.0.0"
+        integrity="sha384-wS5l5IKJBvK6sPTKa2WZ1js3d947pvWXbPJ1OmWfEuxLgeHcEbjUUA5i9V5ZkpCw"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link href="https://fonts.cdnfonts.com/css/linux-libertine-o" rel="stylesheet">
+    <style type="text/tailwindcss">
+        @theme {
+            --font-display: 'Linux Libertine Display O', sans-serif;
+            --text-tiny: 1rem;
+            --text-tiny--line-height: 1.5rem;
+            --text-tiny--letter-spacing: 0.125rem;
+            --text-tiny--font-weight: 500;
+            --text-big: 3rem;
+            --text-big--line-height: 2.5rem;
+            --text-big--letter-spacing: 0.7rem;
+            --text-big--font-weight: 900;
+        }
+        </style>
+</head>
+
+<body class="font-display">
+    <div id="main_content" class="h-dvh bg-zinc-200 content-center">
+        <div>
+            <div class="grid grid-cols-2 grid-rows-3 gap-2">
+                <div class="row-span-3 flex justify-end">
+                    <img class="height-48" alt="" src={{ url_for('img', path='/logo.png' ) }} />
+                </div>
+                <div class="flex row-span-2 justify-start align-start text-big">{{ appname }}</div>
+                <div class="flex justify-start align-end text-tiny">{{ punchline }}</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
