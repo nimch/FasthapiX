@@ -30,6 +30,9 @@
 Python project [pyproject](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/).
 Temporary use of tailwindcss and alpine.js from cdn.
 
+TODO
+db (postgres), docker, nginx
+
 ## Prerequisites
 
 [Install](https://docs.astral.sh/uv/getting-started/installation/) Python package and project manager: [`UV`](https://docs.astral.sh/uv/)
