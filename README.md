@@ -1,5 +1,5 @@
-[<img src="https://raw.githubusercontent.com/nimch/FasthapiX/refs/heads/main/docs/graphics/fasthapix.png" height="60" style="border-radius:12px">](https://www.python.org/)
-[<img src="https://raw.githubusercontent.com/nimch/FasthapiX/refs/heads/main/docs/graphics/fasthapix.svg" height="60" style="border-radius:12px">](https://www.python.org/)
+[<img src="https://raw.githubusercontent.com/nimch/FasthapiX/refs/heads/main/docs/graphics/fasthapix.png" height="60" style="border-radius:12px">](https://github.com/nimch/FasthapiX)
+[<img src="https://raw.githubusercontent.com/nimch/FasthapiX/refs/heads/main/docs/graphics/fasthapix.svg" height="60" style="border-radius:12px">](https://github.com/nimch/FasthapiX)
 
 # FasthapiX
 
