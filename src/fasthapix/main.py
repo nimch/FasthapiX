@@ -19,11 +19,23 @@ logger.debug(f"TEMPLATES_PATH={TEMPLATES_PATH}")
 IMG_PATH = str(Path(__package__ + "/statics/img").absolute())
 logger.debug(f"IMG_PATH={IMG_PATH}")
 
+ALPINEJS_PATH = str(Path(__package__ + "/statics/alpinejs").absolute())
+logger.debug(f"ALPINEJS_PATH={ALPINEJS_PATH}")
+
+CSS_PATH = str(Path(__package__ + "/statics/css").absolute())
+logger.debug(f"CSS_PATH={CSS_PATH}")
+
+HTMX_PATH = str(Path(__package__ + "/statics/htmx").absolute())
+logger.debug(f"HTMX_PATH={HTMX_PATH}")
+
 templates = Jinja2Templates(directory=str(TEMPLATES_PATH))
 
 app = FastAPI()
 
 app.mount("/img", StaticFiles(directory=str(IMG_PATH)), name="img")
+app.mount("/htmx", StaticFiles(directory=str(HTMX_PATH)), name="htmx")
+app.mount("/alpinejs", StaticFiles(directory=str(ALPINEJS_PATH)), name="alpinejs")
+app.mount("/css", StaticFiles(directory=str(CSS_PATH)), name="css")
 
 
 @app.get("/", response_class=HTMLResponse)

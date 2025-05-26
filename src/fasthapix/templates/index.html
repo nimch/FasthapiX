@@ -5,36 +5,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FasthapiX</title>
-    <script src="https://unpkg.com/htmx.org@2.0.0"
-        integrity="sha384-wS5l5IKJBvK6sPTKa2WZ1js3d947pvWXbPJ1OmWfEuxLgeHcEbjUUA5i9V5ZkpCw"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="//unpkg.com/alpinejs" defer></script>
-    <link href="https://fonts.cdnfonts.com/css/linux-libertine-o" rel="stylesheet">
-    <style type="text/tailwindcss">
-        @theme {
-            --font-display: 'Linux Libertine Display O', sans-serif;
-            --text-tiny: 1rem;
-            --text-tiny--line-height: 1.5rem;
-            --text-tiny--letter-spacing: 0.125rem;
-            --text-tiny--font-weight: 500;
-            --text-big: 3rem;
-            --text-big--line-height: 2.5rem;
-            --text-big--letter-spacing: 0.7rem;
-            --text-big--font-weight: 900;
-        }
-        </style>
+    <link rel="icon" type="image/svg" href="{{ url_for('img', path='/logo.svg') }}">
+    <!-- AlpineJS -->
+    <link href="{{ url_for('alpinejs', path='/codebase.css') }}" rel="stylesheet" />
+    <script src="{{ url_for('alpinejs', path='/activator.js') }}" defer></script>
+    <!-- htmx -->
+    <script src="{{ url_for('htmx', path='/htmx-min.js') }}"></script>
+    <!-- TailwindCSS -->
+    <link href="{{ url_for('css', path='/fasthapix-min.css') }}" rel="stylesheet" />
 </head>
 
 <body class="font-display">
-    <div id="main_content" class="h-dvh bg-zinc-200 content-center">
+    <div id="main_content">
         <div>
-            <div class="grid grid-cols-2 grid-rows-3 gap-2">
-                <div class="row-span-3 flex justify-end">
-                    <img class="height-48" alt="" src={{ url_for('img', path='/logo.png' ) }} />
+            <div
+                class="mx-auto my-16 flex max-w-2xl items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
+                <img class="size-48 shrink-0" src="{{ url_for('img', path='/logo.svg' ) }}" alt="FasthapiX Logo" />
+                <div>
+                    <div class="uppercase mb-2 text-6xl font-bold text-black dark:text-white">
+                        {{ appname }}
+                    </div>
+                    <p class="italic text-2xl content-end text-gray-500 dark:text-gray-400">{{ punchline }}</p>
                 </div>
-                <div class="flex row-span-2 justify-start align-start text-big">{{ appname }}</div>
-                <div class="flex justify-start align-end text-tiny">{{ punchline }}</div>
             </div>
         </div>
     </div>

@@ -13,12 +13,10 @@ set dotenv-load := true
 
 # VARIABLES
 
-PACKAGE := "iol"
-REPOSITORY := "iol"
+PACKAGE := "fasthapix"
+REPOSITORY := "fasthapix"
 SOURCES := "src"
 TESTS := "tests"
-
-# DEFAULTS
 
 # display help information
 default:
@@ -29,6 +27,7 @@ default:
 import 'tasks/check.just'
 import 'tasks/clean.just'
 import 'tasks/commit.just'
+import 'tasks/css.just'
 import 'tasks/doc.just'
 import 'tasks/docker.just'
 import 'tasks/format.just'
