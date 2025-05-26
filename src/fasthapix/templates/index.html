@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FasthapiX</title>
-    <link rel="icon" type="image/svg" href="{{ url_for('img', path='/logo.svg') }}">
+    <link rel="icon" type="image/svg" href="{{ url_for('img', path='/logo.svg') }}" />
     <!-- AlpineJS -->
     <link href="{{ url_for('alpinejs', path='/codebase.css') }}" rel="stylesheet" />
     <script src="{{ url_for('alpinejs', path='/activator.js') }}" defer></script>
@@ -15,22 +15,23 @@
     <link href="{{ url_for('css', path='/fasthapix-min.css') }}" rel="stylesheet" />
 </head>
 
-<body class="font-display">
-    <div id="main_content">
-        <div>
-            <div
-                class="mx-auto my-16 flex max-w-2xl items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
-                <img class="size-48 shrink-0" src="{{ url_for('img', path='/logo.svg' ) }}" alt="FasthapiX Logo" />
-                <div>
-                    <div class="uppercase mb-2 text-6xl font-bold text-black dark:text-white">
-                        {{ appname }}
-                    </div>
-                    <p class="italic text-2xl content-end text-gray-500 dark:text-gray-400">{{ punchline }}</p>
+<body>
+    <div id="main_content" class="h-dvh p-12 bg-red-50 dark:bg-red-950">
+        <div
+            class="mx-auto md:mt-22 md:max-w-2xl md:flex justify-center gap-4 p-12 rounded-xl bg-red-50 md:shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
+            <div>
+                <img class="w-full md:h-48" src="{{ url_for('img', path='/logo.svg') }}" alt="FasthapiX Logo" />
+            </div>
+            <div class="text-center md:text-left">
+                <div class="uppercase text-2xl md:text-6xl font-bold text-black dark:text-white">
+                    {{ appname }}
                 </div>
+                <p class="italic text-2xl text-gray-500 dark:text-gray-400">
+                    {{ punchline }}
+                </p>
             </div>
         </div>
     </div>
-
 </body>
 
 </html>
