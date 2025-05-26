@@ -56,7 +56,7 @@
 
         var clickAway = function () {
           var clickAwayActive = $('.click-away.active');
-          
+
           clickAwayActive.each(function () {
             $(this).removeClass('active');
             $(this).attr("aria-expanded", "false"); // if it has aria-expanded
@@ -93,7 +93,7 @@
           activeSiblings.attr("aria-expanded", "false");
         }
 
-        // Deactivate click-aways on window width resize -- because e.g. sometimes used on 
+        // Deactivate click-aways on window width resize -- because e.g. sometimes used on
         // navicon menus that you don’t want activated above a particular breakpoint width
         var deactivateResize = function () {
           var windowWidth = $(window).width();
@@ -155,7 +155,7 @@
 
           }
         }
-        
+
         // Tab only works if there is more than one tab (and assumes that one will start as `.active`)
         if (dataControl === 'tab') {
           if ( ! $(this).hasClass('active')) {
@@ -167,7 +167,7 @@
           }
         }
 
-      });    
+      });
     });
 
   });
